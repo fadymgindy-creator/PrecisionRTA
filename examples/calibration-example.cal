@@ -1,0 +1,17 @@
+# Precision RTA 2 example microphone frequency-response calibration
+# Format: frequency_Hz  correction_dB
+# If your manufacturer file instead contains measured microphone error,
+# choose "Measured error - subtract" during import.
+20      -1.30
+31.5    -0.80
+63       0.40
+125      0.25
+250      0.10
+500      0.05
+1000     0.00
+2000    -0.10
+4000     0.35
+8000     2.10
+12000    2.90
+16000    3.70
+20000    4.20

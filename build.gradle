@@ -1,0 +1,47 @@
+plugins {
+    id 'com.android.application' version '8.7.3'
+}
+
+android {
+    namespace 'app.precisionrta.v2'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId 'app.precisionrta.v2'
+        minSdk 23
+        targetSdk 34
+        versionCode 2
+        versionName '2.0.0'
+        testInstrumentationRunner 'app.precisionrta.v2.DeviceChecks'
+    }
+
+    sourceSets {
+        main {
+            manifest.srcFile 'AndroidManifest.xml'
+            java.srcDirs = ['src']
+            res.srcDirs = ['res']
+        }
+        test {
+            java.srcDirs = ['tests']
+            resources.srcDirs = ['test-resources']
+        }
+        androidTest { java.srcDirs = ['androidTest'] }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    testOptions { unitTests.returnDefaultValues = false }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.json:json:20240303'
+}

@@ -1,0 +1,4 @@
+Original source-package validation claims are superseded.
+See docs/VALIDATION-REPORT.md for reproduced software/device results,
+unverified physical behavior, APK identity and acceptance procedure.
+See docs/MEASUREMENT-VALIDATION.md for expected results and tolerances.

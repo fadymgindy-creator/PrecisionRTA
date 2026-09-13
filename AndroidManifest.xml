@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="2"
+    android:versionName="2.0.0">
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature android:name="android.hardware.microphone" android:required="true" />
+    <application android:allowBackup="false" android:fullBackupContent="false" android:dataExtractionRules="@xml/data_extraction_rules" android:icon="@drawable/ic_launcher" android:label="Precision RTA 2" android:supportsRtl="true" android:theme="@android:style/Theme.Material.NoActionBar">
+        <activity android:name="app.precisionrta.v2.MainActivity" android:configChanges="orientation|screenSize" android:exported="true">
+            <intent-filter><action android:name="android.intent.action.MAIN"/><category android:name="android.intent.category.LAUNCHER"/></intent-filter>
+        </activity>
+    </application>
+</manifest>
